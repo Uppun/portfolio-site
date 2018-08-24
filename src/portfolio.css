@@ -1,0 +1,41 @@
+.project-component {
+    background-color: #2C2F33;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    align-items: center;
+}
+
+.project-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all .2s ease-in-out;
+}
+
+.project-item:hover {
+    box-shadow: 5px 10px 8px #888888;
+    transform: scale(1.1);
+}
+
+.project-item-contents {
+    border-style: solid;
+    border-color: #23272A;
+    background-color: #7289DA;
+    color: #FFFFFF;
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.project-item-title {
+    text-align: center;
+}
+
+.project-item-preview {
+    border-style: solid;
+    border-color: #23272A;
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 200px;
+}
