@@ -4,7 +4,9 @@ import ProjectsComponent from './ProjectsComponent';
 class App extends Component {
   render() {
     return (
-      <ProjectsComponent />
+      <div className='portfolio-components'>
+        <ProjectsComponent />
+      </div>
     );
   }
 }

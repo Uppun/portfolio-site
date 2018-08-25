@@ -8,10 +8,11 @@ export default class ProjectItem extends Component {
                 </div>
                 <div className='project-item-contents'>
                     <div className='project-item-title'>
-                        <h1>{this.props.title}</h1>
+                        {this.props.title}
                     </div>
                     <div className='project-item-description'>
                         <p>{this.props.description}</p>
+                        <p>{this.props.footer}</p>
                     </div>
                 </div>
             </div>

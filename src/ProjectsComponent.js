@@ -4,20 +4,24 @@ import './portfolio.css';
 
 const ProjectItems = [
     {
-        title: 'A*',
-        description: 'This is a project',
+        title: 'Pathfinding Grid',
+        description: 'A grid-based implementation of two pathfinding algorithms: A* and D* Lite. You can generate a random grid or manually craft your own to experiment with. An optional "fog of war" system examines how the pathfinding works with unknown territory.',
+        footer: 'Created with JS/React and flux.'
     },
     {
         title: 'Event Planner',
         description: 'This is also a project',
+        footer: "oof"
     },
     {
         title: 'Project2',
         description: 'More projects',
+        footer: "oof"
     },
     {
         title: 'Project3',
         description: 'Wew',
+        footer: "oof"
     }
 ]
 
@@ -30,8 +34,8 @@ export default class Projects extends Component {
                 <h1>Projects</h1>
                 <div className='project-listing'>
                     {ProjectItems.map(project => {
-                        const {title, description} = project;
-                        return <ProjectItem title={title} description={description} />
+                        const {title, description, footer} = project;
+                        return <ProjectItem title={title} description={description} footer={footer} />
                     })}
                 </div>
                 <div className='project-component-footer'>

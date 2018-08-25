@@ -1,14 +1,23 @@
-.project-component {
+@import url('https://fonts.googleapis.com/css?family=Cabin|Raleway');
+
+.portfolio-components {
     background-color: #2C2F33;
-    height: 600px;
+}
+
+.project-component {
+    height: 1210px;
+    width: 1200px;
+    margin: auto;
 }
 
 .project-listing {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px 500px;
     align-items: center;
-    height: 500px;
+    height: 1100px;
+    grid-column-gap: 200px;
+    grid-row-gap: 50px;
 }
 
 .project-component h1 {
@@ -27,15 +36,18 @@ a {
 }
 
 .footer-string {
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .project-item {
-    margin: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     transition: all .2s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .project-item:hover {
@@ -44,22 +56,32 @@ a {
 }
 
 .project-item-contents {
-    border-style: solid;
-    border-color: #23272A;
     background-color: #7289DA;
     color: #FFFFFF;
-    min-width: 400px;
-    min-height: 200px;
+    min-width: 500px;
+    height: 225px;
 }
 
 .project-item-title {
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     text-align: center;
 }
 
 .project-item-preview {
-    border-style: solid;
-    border-color: #23272A;
     background-color: #FFFFFF;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 500px;
+}
+
+.project-item-description {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
 }
