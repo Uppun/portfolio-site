@@ -5,6 +5,8 @@ export default class ProjectItem extends Component {
         return(
             <div className="project-item">
                 <div className='project-item-preview'>
+                    <img src={this.props.static} alt="projectImg" className='static-preview-image' />
+                    <img src={this.props.animated} alt="animatedprojectImg" className='animated-preview-image' />
                 </div>
                 <div className='project-item-contents'>
                     <div className='project-item-title'>

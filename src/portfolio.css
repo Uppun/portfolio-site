@@ -85,3 +85,11 @@ a {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
 }
+
+.static-preview-image {
+    position: absolute;
+}
+
+.static-preview-image:hover {
+    opacity: 0;
+}
