@@ -105,7 +105,7 @@ a {
 
 .project-item:hover {
     box-shadow: 5px 10px 8px rgb(0, 0, 0);
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .project-item-contents {
@@ -141,6 +141,7 @@ a {
 
 .static-preview-image {
     position: absolute;
+    border-radius: 10px;
 }
 
 .static-preview-image:hover {
@@ -157,7 +158,6 @@ a {
 
 .influences-component-section {
     width: 100%;
-    height: 500px;
 }
 
 .influences-component-content {
@@ -165,6 +165,11 @@ a {
     margin: auto;
 }
 
+.influences-component-content p {
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
 .top-section {
     background-color: #3c91e6;
 }
@@ -177,24 +182,24 @@ a {
     background-color: #b9314f;
 }
 
-.right-slide-enter {
+.right-slide-appear {
     opacity: 0.01;
     transform: translateX(-100%);
 }
 
-.right-slide-enter-active {
+.right-slide-appear.right-slide-appear-active {
     opacity: 1;
     transform: translateX(0%);
-    transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in;
 }
 
-.right-slide-exit {
-    opacity: 1;
-    transform: translateX(0%);
-}
-
-.right-slide-enter-active {
+.left-slide-appear {
     opacity: 0.01;
     transform: translateX(100%);
-    transition: all 1000ms ease-in-out;
+}
+
+.left-slide-appear.left-slide-appear-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1000ms ease-in;
 }
