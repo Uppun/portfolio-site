@@ -21,8 +21,17 @@ export default class AboutMe extends Component {
     }
 
     render() {
+        const githubURL = "https://github.com/Uppun";
+        const resumeURL = "https://www.youtube.com/watch?v=FC4Kun_BimM"; 
         return(
             <div className='background-pages'>
+                <p className='landing-text-name'>
+                    Jonathan Wright<br />
+                    <span className='landing-text-span'>
+                        Software Engineer<br />
+                         <a href={githubURL}>GitHub</a> | <a href={resumeURL}>Resume</a>
+                    </span>
+                </p>
                 <TransitionGroup className='background-slide'>
                     {backgrounds.map((background, index) => {
                         if (index === this.state.currentBackground) {

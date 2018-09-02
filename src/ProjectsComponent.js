@@ -49,7 +49,7 @@ export default class Projects extends Component {
                     })}
                 </div>
                 <div className='project-component-footer'>
-                    <a href={githubURL} target="_blank">
+                    <a href={githubURL}>
                         <div className='footer-string'>
                             {footerString}
                         </div>
