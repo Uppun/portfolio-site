@@ -3,6 +3,7 @@ import ProjectItem from './ProjectItem';
 import './portfolio.css';
 import test1 from './assets/bunnydoggo.png';
 import test2 from './assets/testbun.png';
+import githubLogo from './assets/githublogo.png';
 
 const ProjectItems = [
     {
@@ -47,13 +48,14 @@ export default class Projects extends Component {
                         const {title, description, footer, staticImage, animatedImage} = project;
                         return <ProjectItem key={index} title={title} description={description} footer={footer} static={staticImage} animated={animatedImage} />
                     })}
-                </div>
-                <div className='project-component-footer'>
-                    <a href={githubURL}>
-                        <div className='footer-string'>
-                            {footerString}
-                        </div>
-                    </a>
+                    <div className='project-component-footer'>
+                        <a href={githubURL}>
+                            <div className='footer-string'>
+                                <img src={githubLogo} alt="githublogo" className='github-logo' />
+                                {footerString}
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         )
