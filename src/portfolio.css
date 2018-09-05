@@ -186,6 +186,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    min-height: 100vh;
     align-content: center;
     justify-content: center;
 }
@@ -194,30 +195,36 @@ a {
     width: 100%;
 }
 
+
 .influences-component-content {
     width: 1200px;
-    margin: auto;
+    margin: auto;   
 }
 
 .influence-image {
+    height: 100px;
+    width: 100px;
     margin: 5px;
 }
 
 .influences-component-content p {
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
 }
+
 .top-section {
-    background-color: #3c91e6;
+    background-color: #1864af;
+    border-bottom: solid black;
 }
 
 .middle-section {
-    background-color: #3a8dcc;
+    background-color: #881931;;
 }
 
 .bottom-section {
-    background-color: #b9314f;
+    background-color: #2C2F33;
+    border-top: solid black;
 }
 
 .right-slide-appear {
@@ -255,25 +262,38 @@ a {
     height: 40px;
     display: flex;
     flex-direction: row;
-    background-color: #b9314f;
     box-shadow: 4px 4px 4px rgb(0, 0, 0);
     z-index: 5;
     justify-content: center;
 }
 
 .inactive-link, .active-link {
-    margin-left: 35px;
-    margin-right: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     font-size: 30px;
     font-family: 'Cabin', sans-serif;
 }
 
+.inactive-link:nth-child(1), .active-link:nth-child(1) {
+    border-radius: 0px 0px 0px 15px;
+}
+
+.inactive-link:last-child, .active-link:last-child {
+    border-radius: 0px 0px 15px 0px;
+}
+
 .inactive-link {
+    color: #2C2F33;
+    background-color: #b9314f;
+}
+
+.inactive-link:hover {
     color: #ffffff;
 }
 
 .active-link {
-    color: #2C2F33;
+    color: #ffffff;
+    background-color: #7a2134;
 }
 
 .landing-text-name {

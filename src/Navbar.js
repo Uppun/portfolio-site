@@ -6,9 +6,9 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className='navbar'>
-                <NavLink exact to='/' className='inactive-link' activeClassName='active-link'>Home</NavLink>
-                <NavLink to='/influences' className='inactive-link' activeClassName='active-link'>Influences</NavLink>
-                <NavLink to='/projects' className='inactive-link' activeClassName='active-link'>Projects</NavLink>
+                <NavLink exact to='/' role='button' className='inactive-link' activeClassName='active-link'>Home</NavLink>
+                <NavLink to='/influences' role='button' className='inactive-link' activeClassName='active-link'>Influences</NavLink>
+                <NavLink to='/projects' role='button' className='inactive-link' activeClassName='active-link'>Projects</NavLink>
             </div>
         );
     }
