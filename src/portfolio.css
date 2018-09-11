@@ -101,6 +101,7 @@ body {
 .project-component-footer:hover {
     box-shadow: 4px 4px 4px rgb(0, 0, 0);
     transform: translate(-4px, -4px);
+    cursor: pointer;
 }
 
 a {
@@ -133,6 +134,7 @@ a {
 .project-item:hover {
     box-shadow: 4px 4px 4px rgb(0, 0, 0);
     transform: translate(-4px, -4px);
+    cursor: pointer;
 }
 
 .project-item:hover .project-item-preview .static-preview-image {
@@ -201,52 +203,88 @@ a {
     margin: auto;   
 }
 
-.influence-image {
-    height: 100px;
-    width: 100px;
-    margin: 5px;
+.section-1, .section-2, .section-3 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-images {
+    width: 500px;
+    height: 300px;
+    flex: 0 0 auto;
+}
+
+.section-images img {
+    width: 426px;
+    height: 240px;
+    transition: all 1250ms ease-in;
+    position: absolute;
+    opacity: 0;
+}
+
+.animate img {
+    opacity: 1;
+    transform: none;
+}
+  
+.i1 {
+    transform: translateY(-20px);
+    transition-delay: 1300ms;
+    z-index: 2;
+}
+
+.i2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    transform: translateY(20px);
+    transition-delay: 1150ms;
+    z-index: 1;
+}
+
+.i3 {
+    margin-top: 15px;
+    margin-left: 40px;
+    transition-delay: 1000ms;
+    transform: translateY(-20px);
+}
+
+.section-text {
+    transition: all 1250ms ease-in;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.section-text h1 {
+    font-family: 'Cabin', sans-serif;
+    color: #ffffff;
+}
+
+.animate .section-text {
+    transform: none;
+    opacity: 1;
+    transition-delay: 1250ms;
 }
 
 .influences-component-content p {
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
 }
 
 .top-section {
-    background-color: #1864af;
+    background-color: #101B2D;
     border-bottom: solid black;
 }
 
 .middle-section {
-    background-color: #881931;;
+    background-color: #3E0D10;
 }
 
 .bottom-section {
     background-color: #2C2F33;
     border-top: solid black;
-}
-
-.right-slide-appear {
-    opacity: 0.01;
-    transform: translateX(-100%);
-}
-
-.right-slide-appear.right-slide-appear-active {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 1000ms ease-in;
-}
-
-.left-slide-appear {
-    opacity: 0.01;
-    transform: translateX(100%);
-}
-
-.left-slide-appear.left-slide-appear-active {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: all 1000ms ease-in;
 }
 
 .navbar-wrapper {
