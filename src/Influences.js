@@ -32,16 +32,16 @@ export default class Influences extends Component {
                     <div className='influences-component-content'>
                         <div className={animatedSections > 0 ? 'section-1 animate' : 'section-1'}>
                             <div className='section-images'>
-                                <img class="i1" alt='cat1' src="https://placekitten.com/426/240" />
-                                <img class="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
-                                <img class="i3" alt='cat3' src="https://placekitten.com/640/360" />
+                                <img className="i1" alt='cat1' src="https://placekitten.com/426/240" />
+                                <img className="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
+                                <img className="i3" alt='cat3' src="https://placekitten.com/640/360" />
                             </div>
                             <div className='section-text'>
                                 <h1>
-                                Section 1
+                                Video Games
                                 </h1>
                                 <p>
-                                i love kittens aaaaaaaaaaaaaaaaaaaaaa what is this ooooooooo aaaaaaaaaa eeeeeeeeeeee
+                                My introduction to interest in computers came from childhood with a love of video games. From my first love of Pokémon to my obsession with massively multiplayer online games, I not only grew an interest in how these virtual worlds are constructed but how people constructed communities and relationships in and around them. 
                                 </p>
                             </div>
                         </div>
@@ -52,16 +52,16 @@ export default class Influences extends Component {
                         <div className={animatedSections > 1 ? 'section-2 animate' : 'section-2'}>
                             <div className='section-text'>
                                 <h1>
-                                Section 2
+                                Programming
                                 </h1>
                                 <p>
-                                phbbbbbbbbbbbbbtthese kittens sure are cute eeeeeeeeeeeeeeee wooooooo
+                                As one would expect from a curiosity on how video games are constructed, I was naturally led into an interest in coding and how they functioned on a technical level. As a consequence I ended up majoring and graduating from the University of Oregon with a bachelors in computer science. 
                                 </p>
                             </div>
                             <div className='section-images'>
-                                <img class="i1" alt='cat1' src="https://placekitten.com/426/240" />
-                                <img class="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
-                                <img class="i3" alt='cat3' src="https://placekitten.com/640/360" />
+                                <img className="i1" alt='cat1' src="https://placekitten.com/426/240" />
+                                <img className="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
+                                <img className="i3" alt='cat3' src="https://placekitten.com/640/360" />
                             </div>
                         </div>
                     </div>
@@ -70,9 +70,9 @@ export default class Influences extends Component {
                     <div className='influences-component-content'>
                         <div className={animatedSections > 2 ? 'section-3 animate' : 'section-3'}>
                             <div className='section-images'>
-                                <img class="i1" alt='cat1' src="https://placekitten.com/426/240" />
-                                <img class="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
-                                <img class="i3" alt='cat3' src="https://placekitten.com/640/360" />
+                                <img className="i1" alt='cat1' src="https://placekitten.com/426/240" />
+                                <img className="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
+                                <img className="i3" alt='cat3' src="https://placekitten.com/640/360" />
                             </div>
                             <div className='section-text'>
                                 <h1>

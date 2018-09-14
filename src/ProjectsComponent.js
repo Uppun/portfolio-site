@@ -12,6 +12,7 @@ const ProjectItems = [
         footer: 'Created with JS/React and flux.',
         staticImage: test2,
         animatedImage: test1,
+        url: 'https://Uppun.github.io/Grid-Pathfinding',
     },
     {
         title: 'Event Planner',
@@ -19,6 +20,7 @@ const ProjectItems = [
         footer: "oof",
         staticImage: test2,
         animatedImage: test1,
+        url: 'https://Uppun.github.io/Grid-Pathfinding',
     },
     {
         title: 'Project2',
@@ -26,6 +28,7 @@ const ProjectItems = [
         footer: "oof",
         staticImage: test2,
         animatedImage: test1,
+        url: 'https://Uppun.github.io/Grid-Pathfinding',
     },
     {
         title: 'Project3',
@@ -33,6 +36,7 @@ const ProjectItems = [
         footer: "oof",
         staticImage: test2,
         animatedImage: test1,
+        url: 'https://Uppun.github.io/Grid-Pathfinding',
     }
 ]
 
@@ -45,8 +49,8 @@ export default class Projects extends Component {
                 <h1>Projects</h1>
                 <div className='project-listing'>
                     {ProjectItems.map((project, index) => {
-                        const {title, description, footer, staticImage, animatedImage} = project;
-                        return <ProjectItem key={index} title={title} description={description} footer={footer} static={staticImage} animated={animatedImage} />
+                        const {title, description, footer, staticImage, animatedImage, url} = project;
+                        return <ProjectItem key={index} title={title} description={description} footer={footer} static={staticImage} animated={animatedImage} url={url} />
                     })}
                     <div className='project-component-footer'>
                         <a href={githubURL}>
