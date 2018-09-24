@@ -175,11 +175,19 @@ a {
 
 .project-item .project-item-preview .static-preview-image {
     position: absolute;
-    border-radius: 10px;
     width: 375px;
     height: 300px;
     opacity: 1;
     transition: opacity .2s ease-out;
+}
+
+.project-item .project-item-preview {
+    border-radius: 10px;
+}
+
+.animated-preview-image {
+    width: 375px;
+    height: 300px;
 }
 
 .influences-component {
@@ -230,12 +238,16 @@ a {
 }
   
 .i1 {
+    width: 426;
+    height: 240;
     transform: translateY(-20px);
     transition-delay: 1300ms;
     z-index: 2;
 }
 
 .i2 {
+    width: 640;
+    height: 360;
     margin-top: 30px;
     margin-left: 20px;
     transform: translateY(20px);
@@ -244,6 +256,8 @@ a {
 }
 
 .i3 {
+    width: 640;
+    height: 360;
     margin-top: 15px;
     margin-left: 40px;
     transition-delay: 1000ms;

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 export default class ProjectItem extends Component {
-    handleClick = () => {
-
-    }
-
     render() {
         return(
             <a href={this.props.url}>

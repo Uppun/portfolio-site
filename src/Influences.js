@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import './portfolio.css';
-import testImg from './assets/testbun.png';
 import pkmImg from './assets/pkmblue.png';
+import cabilis from './assets/cabilis05.png'
+import tf2 from './assets/tfw.png';
+import bunnies from './assets/bunnies.png';
+import sigmaclear from './assets/sigmaclear.png';
+import pso2 from './assets/pso2.bmp';
+import worldedit from './assets/WorldEditor.png';
+import code from './assets/code.png';
+import deschutes from './assets/deschutes.png';
 
 export default class Influences extends Component {
     state = {
@@ -32,16 +39,16 @@ export default class Influences extends Component {
                     <div className='influences-component-content'>
                         <div className={animatedSections > 0 ? 'section-1 animate' : 'section-1'}>
                             <div className='section-images'>
-                                <img className="i1" alt='cat1' src="https://placekitten.com/426/240" />
-                                <img className="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
-                                <img className="i3" alt='cat3' src="https://placekitten.com/640/360" />
+                                <img className="i1" alt='cat1' src={pkmImg}/>
+                                <img className="i2" alt='cat2' src={cabilis} />
+                                <img className="i3" alt='cat3' src={tf2} />
                             </div>
                             <div className='section-text'>
                                 <h1>
                                 Video Games
                                 </h1>
                                 <p>
-                                My introduction to interest in computers came from childhood with a love of video games. From my first love of Pokémon to my obsession with massively multiplayer online games, I not only grew an interest in how these virtual worlds are constructed but how people constructed communities and relationships in and around them. 
+                                My interest in computers and programming came from a love of video games from childhood. A passion for playing them from an early age developed into a desire to learn how they were made, and to one day make one of my own.
                                 </p>
                             </div>
                         </div>
@@ -55,13 +62,13 @@ export default class Influences extends Component {
                                 Programming
                                 </h1>
                                 <p>
-                                As one would expect from a curiosity on how video games are constructed, I was naturally led into an interest in coding and how they functioned on a technical level. As a consequence I ended up majoring and graduating from the University of Oregon with a bachelors in computer science. 
+                                While I was definitely interested in game development, my first interaction with programming actually came from Warcraft 3's map editor. It was very rudementary, but it without really having an option for it in school, it became my primary means of learning basic programming. By the time I reached college there was no question, I wanted to study computer science.
                                 </p>
                             </div>
                             <div className='section-images'>
-                                <img className="i1" alt='cat1' src="https://placekitten.com/426/240" />
-                                <img className="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
-                                <img className="i3" alt='cat3' src="https://placekitten.com/640/360" />
+                                <img className="i1" alt='cat1' src={worldedit} />
+                                <img className="i2" alt='cat2' src={code} />
+                                <img className="i3" alt='cat3' src={deschutes} />
                             </div>
                         </div>
                     </div>
@@ -70,16 +77,16 @@ export default class Influences extends Component {
                     <div className='influences-component-content'>
                         <div className={animatedSections > 2 ? 'section-3 animate' : 'section-3'}>
                             <div className='section-images'>
-                                <img className="i1" alt='cat1' src="https://placekitten.com/426/240" />
-                                <img className="i2" alt='cat2' src="https://placekitten.com/g/640/360" />
-                                <img className="i3" alt='cat3' src="https://placekitten.com/640/360" />
+                                <img className="i1" alt='cat1' src={bunnies} />
+                                <img className="i2" alt='cat2' src={pso2} />
+                                <img className="i3" alt='cat3' src={sigmaclear} />
                             </div>
                             <div className='section-text'>
                                 <h1>
-                                Section 3
+                                Community
                                 </h1>
                                 <p>
-                                i love kittens
+                                With my obsessions of computers and gaming, my life quickly revolved around it. Growing up in rural southern isolation provided few chances for making friends. Eventually I was allowed online and immediately began meeting people who also shared a love of gaming. It was thanks to online games in particular, despite how user unfriendly they used to be, that I realized how great online communities can be and with that came a love of working to foster them.
                                 </p>
                             </div>
                         </div>
