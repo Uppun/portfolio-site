@@ -21,6 +21,8 @@ body {
     overflow: hidden;
     background-color: #3f4045;
 }
+
+
 .background-slide .switch-enter {
     transform: translateX(100%);
 }
@@ -174,6 +176,7 @@ a {
 }
 
 .project-item .project-item-preview .static-preview-image {
+    border-radius: 10px 10px 0px 0px;
     position: absolute;
     width: 375px;
     height: 300px;
@@ -181,11 +184,8 @@ a {
     transition: opacity .2s ease-out;
 }
 
-.project-item .project-item-preview {
-    border-radius: 10px;
-}
-
 .animated-preview-image {
+    border-radius: 10px 10px 0px 0px;
     width: 375px;
     height: 300px;
 }
@@ -315,7 +315,7 @@ a {
     display: flex;
     flex-direction: row;
     box-shadow: 4px 4px 4px rgb(0, 0, 0);
-    z-index: 5;
+    z-index: 6;
     justify-content: center;
 }
 
@@ -348,24 +348,31 @@ a {
     background-color: #7a2134;
 }
 
-.landing-text-name {
-    position: absolute;
-    top: 35%;
-    left: 18%;
+.landing-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
-    width: 1200px;
     z-index: 5;
     color: #ffffff;
 }
 
-.landing-text-span {
-    font-size: 30px;
-    color: #ffffff67
+.landing-text h1 {
+    text-shadow: 4px 4px 4px black;
 }
 
-.landing-text-span > a {
+.landing-text span {
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+    color: #6b6a6a;
+}
+
+.landing-text span > a {
     text-decoration: none;
     color: #ffffff;
 }

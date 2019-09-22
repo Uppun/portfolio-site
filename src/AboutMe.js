@@ -25,13 +25,6 @@ export default class AboutMe extends Component {
         const resumeURL = "https://www.youtube.com/watch?v=FC4Kun_BimM"; 
         return(
             <div className='background-pages'>
-                <p className='landing-text-name'>
-                    Jonathan Wright<br />
-                    <span className='landing-text-span'>
-                        Software Engineer<br />
-                         <a href={githubURL}>GitHub</a> | <a href={resumeURL}>Resume</a>
-                    </span>
-                </p>
                 <TransitionGroup className='background-slide'>
                     {backgrounds.map((background, index) => {
                         if (index === this.state.currentBackground) {
@@ -45,6 +38,11 @@ export default class AboutMe extends Component {
                         }
                     })}
                 </TransitionGroup>
+                <div className='landing-text'>
+                    <h1>Jonathan Wright</h1>
+                    <span>Software Engineer</span>
+                    <span><a href={githubURL}>GitHub</a> | <a href={resumeURL}>Resume</a></span>
+                </div>
             </div>
         );
     }
