@@ -24,7 +24,7 @@ export default class AboutMe extends Component {
         const githubURL = "https://github.com/Uppun";
         const resumeURL = "https://www.youtube.com/watch?v=FC4Kun_BimM"; 
         return(
-            <div className='background-pages'>
+            <div id='home' className='background-pages'>
                 <TransitionGroup className='background-slide'>
                     {backgrounds.map((background, index) => {
                         if (index === this.state.currentBackground) {

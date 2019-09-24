@@ -51,7 +51,7 @@ export default class Projects extends Component {
         const footerString = "If you'd like to see more, check out my github here!";
         const githubURL = "https://github.com/Uppun";
         return(
-            <div className='project-component'>
+            <div id='projects' className='project-component'>
                 <h1>Projects</h1>
                 <div className='project-listing'>
                     {ProjectItems.map((project, index) => {

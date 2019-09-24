@@ -34,7 +34,7 @@ export default class Influences extends Component {
     render() {
         const {animatedSections} = this.state;
         return(
-            <div className='influences-component'>
+            <div id='influences' className='influences-component'>
                 <div className='influences-component-section top-section'>
                     <div className='influences-component-content'>
                         <div className={animatedSections > 0 ? 'section-1 animate' : 'section-1'}>

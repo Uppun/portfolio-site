@@ -4,11 +4,13 @@ import { NavLink } from 'react-router-dom';
 
 export default class Navbar extends Component {
     render() {
+        const {active} = this.props;
+        
         return (
             <div className='navbar'>
-                <NavLink exact={true} to='/' role='button' className='inactive-link' activeClassName='active-link'>Home</NavLink>
-                <NavLink to='/influences' role='button' className='inactive-link' activeClassName='active-link'>Influences</NavLink>
-                <NavLink to='/projects' role='button' className='inactive-link' activeClassName='active-link'>Projects</NavLink>
+                <a href='#home' className={active === 'home' ? 'active-link' : 'inactive-link'}>Home</a>
+                <a href='#influences' className={active === 'influences' ? 'active-link' : 'inactive-link'}>Influences</a>
+                <a href='#projects' className={active === 'projects' ? 'active-link' : 'inactive-link'}>Projects</a>
             </div>
         );
     }
