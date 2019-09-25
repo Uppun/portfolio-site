@@ -15,11 +15,23 @@ export default class ProjectItem extends Component {
                         </div>
                         <div className='project-item-description'>
                             <p>{this.props.description}</p>
-                            <p>{this.props.footer}</p>
+                        </div>
+                        <div className='tags'>
+                            {this.props.tags.map((tag, index) => {
+                                return <Tag content={tag} key={index} />
+                            })}
                         </div>
                     </div>
                 </div>
             </a>
         )
     }
+}
+
+function Tag({content}) {
+    return (
+        <div className='project-tag'>
+            {content}
+        </div>
+    );
 }

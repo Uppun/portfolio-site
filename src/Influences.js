@@ -13,26 +13,37 @@ import deschutes from './assets/deschutes.png';
 export default class Influences extends Component {
     state = {
         animatedSections: 0,
+        hasAnimated: false,
     };
 
     componentDidMount() {
-        this._sectionAnimationTimeout = setTimeout(this.animateNextSection, 500);
+        const {active} = this.props;
+        if (active === 'influences') {
+            this._sectionAnimationTimeout = setTimeout(this.animateNextSection, 50);
+            this.setState({hasAnimated: true});
+        }
     }
 
-    componentWillUnmount() {
-        clearTimeout(this._sectionAnimationTimeout);
+    componentDidUpdate(prevProps) {
+        const {hasAnimated} = this.state;
+        const {active} = this.props;
+        if (active === 'influences' && !hasAnimated) {
+            this._sectionAnimationTimeout = setTimeout(this.animateNextSection, 50);
+            this.setState({hasAnimated: true});
+        }
     }
 
     animateNextSection = () => {
         const animatedSections = this.state.animatedSections + 1;
         this.setState({animatedSections});
         if (animatedSections < 3) {
-          this._sectionAnimationTimeout = setTimeout(this.animateNextSection, 2000);
+          this._sectionAnimationTimeout = setTimeout(this.animateNextSection, 400);
         }
       };
 
     render() {
         const {animatedSections} = this.state;
+
         return(
             <div id='influences' className='influences-component'>
                 <div className='influences-component-section top-section'>

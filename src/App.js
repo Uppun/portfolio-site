@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import ProjectsComponent from './ProjectsComponent';
 import AboutMe from './AboutMe';
 import Influences from './Influences';
-import { Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar';
 
 function App() {
 
-  const [active, setActive] = useState('red');
+  const [active, setActive] = useState('home');
 
   const handleScroll = () => {
     const scrollPos = window.pageYOffset;
@@ -18,13 +17,18 @@ function App() {
       const trueHeight = height + parseInt(style.marginTop, 10) + parseInt(style.marginBottom, 10);
       if (y < scrollPos && (y + trueHeight) >= scrollPos) {
         setActive(page.id);
+        window.history.replaceState(null, null, `#${page.id}`);
+        break;
       }
     }
   }
 
   useEffect(() => {
-    if (window.location.hash) {
-      setActive(window.location.hash.substr(1));
+    if (window.location.hash.startsWith('#/')) {
+      const currentHash = window.location.hash.substr(2);
+      if (currentHash) {
+        setActive(currentHash);
+      }
     }
 
     document.addEventListener('scroll', handleScroll)
@@ -37,8 +41,8 @@ function App() {
       </div>
       <div id='pages'>
           <AboutMe />
-          <Influences />
           <ProjectsComponent />
+          <Influences active={active} />
       </div>
     </div>
   );
