@@ -59,7 +59,7 @@ export default class Influences extends Component {
                                 Video Games
                                 </h1>
                                 <p>
-                                Gaming has been my primary hobby since childhood. It kindled my desire to program and one day create games of my own.
+                                Gaming has been my primary hobby since childhood. It kindled my desire to program and to one day create games of my own.
                                 </p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ export default class Influences extends Component {
                                 Community
                                 </h1>
                                 <p>
-                                Living in a fairly isolated part of the country growing up, my primary means of making friends and interacting came with online gaming. Being able to provide means for communities to interact and grow together is one of my greatest desires for those who were in similar siutations to myself.
+                                Living in a fairly isolated part of the country growing up, my primary means of making friends and interacting came with online gaming. Being able to provide a means for communities to interact and grow together is one of my greatest desires.
                                 </p>
                             </div>
                         </div>
