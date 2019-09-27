@@ -26,7 +26,7 @@ const ProjectItems = [
     },
     {
         title: 'Conway\'s Game of Life',
-        description: 'Select cells to fill by clicking on them, press update to advance to the next generation. A cell only survive if it has 2 to 3 neighbors, and it will reproduce with 3. Any other amount will result in it\'s death.',
+        description: 'Select cells to fill by clicking on them, press update to advance to the next generation. A cell will only survive if it has 2 to 3 neighbors, and it will reproduce with 3. Any other amount will result in its death.',
         tags: ['nodejs', 'react', 'flux'],
         staticImage: conwaystatic,
         animatedImage: conwayanimated,
@@ -34,7 +34,7 @@ const ProjectItems = [
     },
     {
         title: 'Turn Based Project',
-        description: 'A small turn based rpg-style combat simulator client as well as a server that generates and keeps track of the battle state using a database. Built to try out full-stack development.',
+        description: 'A small turn based RPG-styled combat simulator client as well as a server that generates and keeps track of the battle state using a database. Built to try out full-stack development.',
         tags: ['nodejs', 'react', 'flux', 'express', 'mongodb'],
         staticImage: gamestatic,
         animatedImage: gameanimated,
@@ -42,7 +42,7 @@ const ProjectItems = [
     },
     {
         title: 'Discord Forms',
-        description: 'A site that allows you to create and share surveys. Authenticates through discord, allowing you to see who answered what based on their discord profile. Requires a discord account to use.',
+        description: 'A site that allows you to create and share surveys. Authenticates through Discord, allowing you to see who answered what based on their Discord profile. Requires a Discord account to use.',
         tags: ['nodejs', 'react', 'flux', 'express', 'mongodb'],
         staticImage: formsstatic,
         animatedImage: formsanimated,
@@ -58,7 +58,7 @@ const ProjectItems = [
     },
     {
         title: 'Portfolio Site',
-        description: 'The source code for this portfolio site! A SPA with features like an image carousel, css animations and a navbar with scroll detection.',
+        description: 'The source code for this portfolio site! A SPA with features like an image carousel, CSS animations and a navbar with scroll detection.',
         tags: ['nodejs', 'react'],
         staticImage: portfoliostatic,
         animatedImage: portfolio,
