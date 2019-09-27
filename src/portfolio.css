@@ -406,8 +406,7 @@ a {
 .project-tag {
     background-color: #505156;
     color: #ffedf1;
-    padding: 3px;
-    margin-left: 1px;
-    margin-right: 1px;
-    border-radius: 3px;
+    padding: 2px 5px;
+    margin-right: 3px;
+    border-radius: 7px;
 }
