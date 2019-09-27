@@ -10,6 +10,10 @@ import conwayanimated from './assets/conwayanimated.gif';
 import portfoliostatic from './assets/portfoliostatic.png';
 import portfolio from './assets/portfolio.gif';
 import githubLogo from './assets/githublogo.png';
+import formsanimated from './assets/forms.gif';
+import formsstatic from './assets/forms.png';
+import gearstatic from './assets/gear.png';
+import gearanimated from './assets/gear.gif';
 
 const ProjectItems = [
     {
@@ -37,6 +41,22 @@ const ProjectItems = [
         url: 'https://Uppun.github.io/Uppun-Game',
     },
     {
+        title: 'Discord Forms',
+        description: 'A site that allows you to create and share surveys. Authenticates through discord, allowing you to see who answered what based on their discord profile. Requires a discord account to use.',
+        tags: ['nodejs', 'react', 'flux', 'express', 'mongodb'],
+        staticImage: formsstatic,
+        animatedImage: formsanimated,
+        url: 'http://discord-forms.herokuapp.com',
+    },
+    {
+        title: 'FFXIV Gear Display',
+        description: 'A website that allows you to display gear builds from Ariyala in an easier-to-read fashion than the regular site. Enter the build ID to view the corresponding build.',
+        tags: ['nodejs', 'react', 'flux'],
+        staticImage: gearstatic,
+        animatedImage: gearanimated,
+        url: 'https://uppun.github.io/Gear-Displayer/',
+    },
+    {
         title: 'Portfolio Site',
         description: 'The source code for this portfolio site! A SPA with features like an image carousel, css animations and a navbar with scroll detection.',
         tags: ['nodejs', 'react'],
@@ -58,14 +78,14 @@ export default class Projects extends Component {
                         const {title, description, tags, staticImage, animatedImage, url} = project;
                         return <ProjectItem key={index} title={title} description={description} tags={tags} static={staticImage} animated={animatedImage} url={url} />
                     })}
-                    <div className='project-component-footer'>
+                </div>
+                <div className='project-component-footer'>
                         <a href={githubURL}>
                             <div className='footer-string'>
                                 <img src={githubLogo} alt="githublogo" className='github-logo' />
                                 {footerString}
                             </div>
                         </a>
-                    </div>
                 </div>
             </div>
         )

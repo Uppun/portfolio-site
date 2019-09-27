@@ -4,7 +4,6 @@ import './portfolio.css';
 export default class Navbar extends Component {
     render() {
         const {active} = this.props;
-        console.log(active)
         return (
             <div className='navbar'>
                 <a href='#home' className={active === 'home' ? 'active-link' : 'inactive-link'}>Home</a>

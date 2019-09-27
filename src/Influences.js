@@ -59,7 +59,7 @@ export default class Influences extends Component {
                                 Video Games
                                 </h1>
                                 <p>
-                                My interest in computers and programming came from a love of video games from childhood. A passion for playing them from an early age developed into a desire to learn how they were made, and to one day make one of my own.
+                                Gaming has been my primary hobby since childhood. It kindled my desire to program and one day create games of my own.
                                 </p>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default class Influences extends Component {
                                 Programming
                                 </h1>
                                 <p>
-                                While I was definitely interested in game development, my first interaction with programming actually came from Warcraft 3's map editor. It was very rudementary, but it without really having an option for it in school, it became my primary means of learning basic programming. By the time I reached college there was no question, I wanted to study computer science.
+                                The basics of programming were first introduced to me through Warcraft III's map editor. From there I was inspired to major in Computer Science at the University of Oregon.
                                 </p>
                             </div>
                             <div className='section-images'>
@@ -97,7 +97,7 @@ export default class Influences extends Component {
                                 Community
                                 </h1>
                                 <p>
-                                With my obsessions of computers and gaming, my life quickly revolved around it. Growing up in rural southern isolation provided few chances for making friends. Eventually I was allowed online and immediately began meeting people who also shared a love of gaming. It was thanks to online games in particular, despite how user unfriendly they used to be, that I realized how great online communities can be and with that came a love of working to foster them.
+                                Living in a fairly isolated part of the country growing up, my primary means of making friends and interacting came with online gaming. Being able to provide means for communities to interact and grow together is one of my greatest desires for those who were in similar siutations to myself.
                                 </p>
                             </div>
                         </div>
