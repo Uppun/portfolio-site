@@ -68,7 +68,7 @@ const ProjectItems = [
 
 export default class Projects extends Component {
     render() {
-        const footerString = "If you'd like to see more, check out my github here!";
+        const footerString = "If you'd like to see more, check out my GitHub here!";
         const githubURL = "https://github.com/Uppun";
         return(
             <div id='projects' className='project-component'>
