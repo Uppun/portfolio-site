@@ -22,7 +22,7 @@ export default class AboutMe extends Component {
 
     render() {
         const githubURL = "https://github.com/Uppun";
-        const resumeURL = "https://www.youtube.com/watch?v=FC4Kun_BimM"; 
+        const resumeURL = "https://docs.google.com/document/d/e/2PACX-1vQmRIlCMtQOC6xB9qpW_Jdlj5K2Lsgtw4xd0iE2ynRURC13jsSpG16r_4hvJcJv2G-2K7TK5e0Y9lYs/pub"; 
         return(
             <div id='home' className='background-pages'>
                 <TransitionGroup className='background-slide'>
